@@ -21,20 +21,24 @@ main {
 }
 
 .input-tag-btn {
-    position: relative;
+  background: red;
+  position: relative;
   /* padding: 5px; */
-  max-height: 25px;
+  max-height: 45px;
   width: 100%;
   background: green;
 }
 
-input {
- height: 100%;
+.input-tag {
+  max-height: 45px;
+  height: 100%;
   width: 100%;
 }
 
 .add-btn {
   max-width: 20%;
+  max-height: 45px;
+  height: 100%;
   position: absolute;
   right: 0;
   top: 0;
@@ -52,38 +56,36 @@ input {
     display: flex;
 } */
 
-
 .list-container {
-    /* Optional: If you want to style the container itself */
-    width: 100%; /* Or any desired width */
-  
-  }
-  
-  .list {
-    display: flex; /* Enable flexbox layout */
-    align-items: center; /* Vertically align items to the center */
-    border: 1px solid #ccc; /* Optional: Add a border for visual separation */
-    padding: 8px; /* Optional padding */
-    margin-bottom: 5px; /* Optional margin between list items */
-  }
-  
-  .list input[type="radio"] {
-    width: 16px;
-    height: 16px;
-    gap: 20px;
-    padding-right: 10px;
-    /* other styles */
+  /* Optional: If you want to style the container itself */
+  width: 100%; /* Or any desired width */
 }
-  
-  .list p {
-    flex-grow: 1; /* Allow paragraph to take up remaining space */
-    margin: 0; /* Remove default paragraph margins */
-    white-space: nowrap; /* Prevent text wrapping */
-    overflow: hidden; /* Hide overflowing text */
-    text-overflow: ellipsis; /* Add ellipsis (...) for overflowing text */
-  }
-  
-  .list span {
-    cursor: pointer; /* Change cursor on hover for the "X" span */
-    margin-left: 10px; /* Space between paragraph and span */
-  }
+
+.list {
+  display: flex; /* Enable flexbox layout */
+  align-items: center; /* Vertically align items to the center */
+  border: 1px solid #ccc; /* Optional: Add a border for visual separation */
+  padding: 8px; /* Optional padding */
+  margin-bottom: 5px; /* Optional margin between list items */
+}
+
+.list input[type="radio"] {
+  width: 16px;
+  height: 16px;
+  gap: 20px;
+  padding-right: 10px;
+  /* other styles */
+}
+
+.list p {
+  flex-grow: 1; /* Allow paragraph to take up remaining space */
+  margin: 0; /* Remove default paragraph margins */
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Add ellipsis (...) for overflowing text */
+}
+
+.list span {
+  cursor: pointer; /* Change cursor on hover for the "X" span */
+  margin-left: 10px; /* Space between paragraph and span */
+}
